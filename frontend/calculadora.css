@@ -1,0 +1,77 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: rgb(66, 62, 40);
+}
+
+
+article div {
+    font-size:20px;
+    color: rgba(255, 255, 255, .9);
+    text-align:center;
+    text-decoration: underline brown;
+
+}
+
+aside h1{
+    font-size: 33px;
+    text-align: right;
+    padding-right: 150px;
+    text-decoration: underline white;
+}
+aside img{
+    display: flex;
+    float: right;
+    width: 500px;
+    height: 400px;
+    padding: 50px;
+
+}
+
+.calculadora-grilla{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+   padding-top:0 ;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(4, 100px);
+}
+.calculadora-grilla > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(247, 234, 234, 0.75);
+}
+
+.output{
+    grid-column: 1/ -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .display{
+    color: black;
+    font-size: 1.85rem;
+    text-align: right;
+}
+
+.calculadora-grilla > button:hover{
+    background-color: rgba(255, 255, 255, .9);
+}
+
+@media only screen and (max-width : 900px) {
+    body {
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
