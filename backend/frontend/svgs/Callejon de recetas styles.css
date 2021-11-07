@@ -1,0 +1,540 @@
+* {
+    box-sizing: border-box;
+    padding: 10px ;
+    
+
+}
+body {
+    font-family: 'open sans';
+    background-color: rgb(66, 62, 40);
+    padding: 7%;
+    border:5% ;
+}
+
+header{
+    background-color:rgb(80, 114, 60);
+    font-size: large;
+    justify-self: end;
+    display: grid;
+    height: 75px ;
+    width: 100%;
+
+}
+header > a{
+    color:#fff;
+    height: 10px;
+    font-weight: 300;
+    margin-right: 1px;
+    float: right;
+}
+
+
+
+nav {
+    width: 100%;
+    height: 100%;
+    background-color: sienna;
+    padding: 12%;
+    
+
+}
+
+
+.textos-nav {
+    font-size: large;
+    align-self: center;
+    color: sienna;
+    color:white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 19px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: overline solid rgb(80, 114, 60);
+    font-style: italic;
+    font-variant: normal;
+    text-transform: uppercase;
+
+}
+.textos-nav h1{
+    text-shadow: -6px -10px 4px #811d1d;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: maroon;
+    font-size: 45px;
+    font-family:'Bebas Neue', cursive;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 60px;
+    text-decoration: overline solid rgb(189, 192, 18);
+}
+
+
+nav .textos-nav{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+.textos-nav h1{
+    font-size: 50px;
+    color:#fff;
+    text-decoration: none;
+    
+}
+
+.textos-nav h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+    text-decoration: none;
+}
+.textos-nav h3{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+    text-decoration: none;
+}
+.textos-nav p{
+    font-size: large;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+main{
+    background-color: sienna;
+    color:#fff;
+}
+
+
+.contenedor-derechos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr;
+    grid-column-gap: 1px;
+    text-align: justify center;
+}
+
+.imagen-principal{
+    width: 600px; 
+    height: 400px;
+    
+}
+section h1{
+    font-size: 30px;
+    text-decoration: underline olive;
+    font-family:'EB Garamond', serif; ;
+}
+
+video .film{
+grid-column-start: 2;
+}
+
+article h3{
+ font-size: 25px;
+text-decoration: underline olive;
+}
+
+
+.contenedor-derechos h1{
+grid-column-start: 2;
+}
+
+/* Galeria */
+
+
+
+
+.galeria-recetas{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-recetas{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-recetas > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: olive;
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.galeria-recetas:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* Info nutricional */
+
+.cards{
+    display: flex;
+    justify-content:center;
+    content: unset;
+}
+
+.card h4{
+    font-size: 24px;
+    font-family:'Oswald', sans-serif;;
+}
+
+.cards .card{
+    background:rgb(239, 202, 8);
+    display: flex;
+    width: 100%;
+    height: 250px;
+    margin: 0.3rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+
+.cards .card img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-nutricional{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card > .contenido-nutricional{
+    font-weight: 300;
+    padding-top: 2px;
+
+}
+/* materiales de interes */
+
+.contenidolinks{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+    
+}
+
+section p{
+     font-size: 20px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.calculadora{
+    text-align: center;
+    background: cornflowerblue;
+    padding: 15px 15px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5em;
+    border-radius: 3.5px;
+    text-decoration: none;
+    transition: all 0.15s linear;
+}
+.servicio{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.material{
+    width: 28%;
+    text-align: center;
+}
+
+.material img{
+    width: 90%;
+}
+
+.material h3{
+    margin: 5px;
+}
+
+.material p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.foot-info{
+    text-align: center;
+}
+
+.foot-info h4{
+    color: #fff;
+    border-bottom: 3px solid rgb(239, 202, 8);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.foot-info p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+@media screen and (max-width:900px){
+    header > a{
+        margin-right: 5px;
+        
+    }
+
+    nav{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+         
+    }
+
+    .textos-nav{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .textos-nav h1{
+        font-size: 22px;
+
+    }
+
+    .textos-nav h2{
+        font-size: 15px;
+    }
+
+    .textos-nav h3{
+        font-size: 15px;
+    }
+
+    .imagen-principal {
+     height:200px;
+     width: 350px;
+     
+        
+    }
+   .contenedor-derechos {
+       font-size: 21px;
+       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .film{
+        width: 500px;
+        height: 300px;
+    }
+
+    /* Galeria */
+
+    .imagen-recetas{
+        width: 44%;
+    }
+
+    /* Cards */
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    /* servicios info */
+
+    .servicio{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .material{
+        width: 100%;
+        text-align: center;
+    }
+
+    .material:nth-child(1), .material:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .material img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:650px){
+    header > a{
+        margin-right: 5px;
+        
+    }
+
+    nav{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+         
+    }
+
+    .textos-nav{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .textos-nav h1{
+        font-size: 22px;
+
+    }
+
+    .textos-nav h2{
+        font-size: 15px;
+    }
+
+    .textos-nav h3{
+        font-size: 15px;
+    }
+
+    .imagen-principal {
+     height:150px;
+     width: 250px;
+     
+        
+    }
+   .contenedor-derechos {
+       font-size: 21px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+   } 
+   
+    .contenedor-info-web .contenidolinks{
+        width: 95%;
+    }
+
+    /* Galeria */
+
+    .imagen-recetas{
+        width: 95%;
+    }
+
+    /* info nutricional */
+
+    .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card img{
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Footer */
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .foot-info{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .foot-info h4{
+        border: none;
+    }
+
+    .foot-info p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+}
